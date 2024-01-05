@@ -8,6 +8,8 @@ import Header from "./component/header/Header"
 import Home from './component/home/Home';
 import Menu from './component/Menu';
 import NotFound from './component/NotFound';
+import Product from './component/Product';
+import ListProduct from './component/ListProduct';
 
 
 function App() {
@@ -17,11 +19,12 @@ function App() {
       <Footer/> */}
       <BrowserRouter>
       <Routes>
-        <Route index element={<Home/>}/>
+        <Route index element={<ListProduct/>}/>
         <Route path="/footer" element={<Footer/>} />
         <Route path="/header" element={<Header/>}/>
         <Route path="/reactstrap" element={<ReactStrap/>}/>
         <Route path="/menu" element={<Menu/>}/>
+        <Route path="/product/:id" element={<Product/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
       </BrowserRouter>
