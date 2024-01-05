@@ -10,7 +10,7 @@ export default function ListProduct() {
             setList(res.data)
         });
 
-    });
+    }, []);
   return (
     <div>
 
